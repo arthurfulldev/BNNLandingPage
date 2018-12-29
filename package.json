@@ -1,0 +1,22 @@
+{
+  "name": "bnn",
+  "version": "1.0.0",
+  "description": "LandingPageBNN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurfulldev/BNNLandingPage.git"
+  },
+  "author": "Arturo Hernández Medero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthurfulldev/BNNLandingPage/issues"
+  },
+  "homepage": "https://github.com/arthurfulldev/BNNLandingPage#readme",
+  "dependencies": {
+    "bootstrap-scss": "^4.1.3"
+  }
+}
