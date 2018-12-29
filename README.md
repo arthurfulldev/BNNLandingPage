@@ -7,5 +7,5 @@ Requerimiento de entrevista para BNN
 * [gulp-uglifycss 1.1.0](https://www.npmjs.com/package/gulp-uglifycss)
 
 ### fonts
-(google font oswald-medium)[https://fonts.google.com/specimen/Oswald?selection.family=Oswald:500]
-Roboto regular
+* (google font oswald-medium)[https://fonts.google.com/specimen/Oswald?selection.family=Oswald:500]
+* Roboto regular
