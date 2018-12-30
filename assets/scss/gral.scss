@@ -1,6 +1,6 @@
 @import './variables.scss';
 body{
-
+    color: $bnn-color-text-color;
     background-color: $bnn-color-primary;
 
     .container{
@@ -9,14 +9,20 @@ body{
         }
         
         .page{
-            
-            box-shadow: 1px 1px 15px $bnn-color-secondary;
             overflow: hidden;
-                 
-            :nth-child(odd){
+            border: 1px solid $bnn-luz;
+            margin-top: -80px;
+            padding-top: 90px;
+            width: 100%;
+            height: calc(100vh + 90px);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:nth-child(odd){
                 background-color: $bnn-color-primary;
             }
-            tr:nth-child(even){
+            &:nth-child(even){
                 background-color: $bnn-color-secondary;
             }
         }

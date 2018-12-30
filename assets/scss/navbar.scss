@@ -2,6 +2,7 @@
 
 .navbar{
     background: $bnn-color-secondary;
+    border-bottom: 1px solid $bnn-luz;
     .navbar-toggler{
         color:  $bnn-color-text-action;
         &.collapsed{
