@@ -9,11 +9,9 @@ body{
         }
         
         .page{
-            width: 100%;
-            height: 100vh;
+            
             box-shadow: 1px 1px 15px $bnn-color-secondary;
             overflow: hidden;
-            margin-top: 56px;
                  
             :nth-child(odd){
                 background-color: $bnn-color-primary;
@@ -22,5 +20,16 @@ body{
                 background-color: $bnn-color-secondary;
             }
         }
+        
+        div.page:not(:first-of-type) {
+            padding-top: 56px;
+        }
+        
     }
+
+    input{
+        color: $bnn-color-text-color;
+    }
+
+    
 }

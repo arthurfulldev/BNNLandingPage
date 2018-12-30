@@ -1,0 +1,25 @@
+@import 'variables.scss';
+
+.navbar{
+    background: $bnn-color-secondary;
+    .navbar-toggler{
+        color:  $bnn-color-text-action;
+        &.collapsed{
+            color: $bnn-color-text-color;
+        }
+    }
+    
+    // Estilizado del los item ancla del menu
+    li.nav-item{
+        margin-top: 0;
+        a.nav-link{
+            color: $bnn-color-text-color;
+            border-radius: initial;
+            &.active{
+                border-top: 3px solid $bnn-color-text-action;
+                color: $bnn-color-text-action;
+                background-color: initial;
+            }
+        }
+    }
+}

@@ -20,8 +20,12 @@ gulp.task('bootstrap-sass', function () {
 
 gulp.task('sass', function () {
   return gulp.src('./assets/scss/**/*.scss')
-    .pipe(sass())
+    .pipe(sass.sync().on('error', sass.logError))
     .pipe(concatCss("mine.min.css"))
     .pipe(minifycss())
     .pipe(gulp.dest('assets/css'));
+});
+
+gulp.task('sass:watch', function () {
+  gulp.watch('./assets/scss/**/*.scss', ['sass']);
 });

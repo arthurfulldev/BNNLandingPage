@@ -7,7 +7,10 @@
         ::placeholder{
             color: $bnn-color-secondary;
         }
-
-       
+        .form-control{
+            border: none;
+            color: $bnn-color-text-color;
+            background: $bnn-color-background-filed;
+        }
     }
 }
