@@ -1,14 +1,19 @@
 @import "variables.scss";
 
-.contacto{
+#contact{
+    .contact-content{
+        max-width: 500px;
+        text-align: justify;
+    }
+    
     .form-group{
         background-color: none !important;
-        border: 1px solid $bnn-color-background-filed;
         ::placeholder{
             color: $bnn-color-secondary;
         }
         .form-control{
             border: none;
+            outline: none;
             color: $bnn-color-text-color;
             background: $bnn-color-background-filed;
         }

@@ -1,0 +1,15 @@
+@import 'variables.scss';
+
+.carousel-indicators {
+    .active{
+        background-color: $bnn-color-text-action;
+    }
+    li{
+        border-radius: 50px;
+        width: 13px;
+        height: 13px;
+        margin-right: 6px;
+        margin-left: 6px;
+        background-color: $bnn-color-text-color;
+    }
+}
