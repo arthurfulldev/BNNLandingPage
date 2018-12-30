@@ -1,0 +1,13 @@
+@import "variables.scss";
+
+.contacto{
+    .form-group{
+        background-color: none !important;
+        border: 1px solid $bnn-color-background-filed;
+        ::placeholder{
+            color: $bnn-color-secondary;
+        }
+
+       
+    }
+}
