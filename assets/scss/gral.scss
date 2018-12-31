@@ -10,8 +10,20 @@
     src: url(../fonts/roboto/Roboto-Regular.ttf) format("truetype");
 }
 
+p{
+    color: #747982;
+}
+
 .titulo{
     font-family: "oswald";
+}
+
+.btn-bnn{
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,.1);
+    margin: 1rem 0;
+    padding: .5rem 2.5rem;
+    color: $bnn-color-text-color;
 }
 
 body{
@@ -25,6 +37,24 @@ body{
         }
         
         .page{
+            &:nth-child(odd){
+                background-color: $bnn-color-primary;
+            }
+            &:nth-child(even){
+                background-color: $bnn-color-secondary;
+            }
+            &#mision{
+                background-image: url('../images/MISSION.png');
+            }
+            &#vision{
+                background-image: url('../images/VISUAL.png');
+            }
+            &#contact{
+                background-image: url('../images/CONTACT.png');
+            }
+            background-size: cover;
+            background-repeat: no-repeat;
+
             overflow: hidden;
             border: 1px solid $bnn-luz;
             //margin-top: -80px;
@@ -35,12 +65,6 @@ body{
             display: flex;
             align-items: center;
             justify-content: center;
-            &:nth-child(odd){
-                background-color: $bnn-color-primary;
-            }
-            &:nth-child(even){
-                background-color: $bnn-color-secondary;
-            }
         }
         
         div.page:not(:first-of-type) {
@@ -53,3 +77,7 @@ body{
     }    
 }
 
+.special-separate{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}

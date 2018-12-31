@@ -1,11 +1,17 @@
 @import "variables.scss";
 
 #contact{
+    padding-top: 200px;
     .contact-content{
         max-width: 500px;
         text-align: justify;
     }
     
+    .form-contact{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
     .form-group{
         background-color: none !important;
         ::placeholder{
