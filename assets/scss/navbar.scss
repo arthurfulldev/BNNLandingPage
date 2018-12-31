@@ -6,7 +6,7 @@
     .navbar-toggler{
         color:  $bnn-color-text-action;
         &.collapsed{
-            color: $bnn-color-text-color;
+            color: $bnn-color-text;
         }
     }
     
@@ -14,7 +14,7 @@
     li.nav-item{
         margin-top: 0;
         a.nav-link{
-            color: $bnn-color-text-color;
+            color: $bnn-color-text;
             border-radius: initial;
             &.active{
                 border-top: 3px solid $bnn-color-text-action;

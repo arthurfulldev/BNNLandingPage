@@ -26,6 +26,13 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('assets/css'));
 });
 
+gulp.task('js', function () {
+  return gulp.src('./assets/js/**/*.js')
+    .pipe(concat("bundle.min.js"))  
+    .pipe(uglify())
+    .pipe(gulp.dest('assets/js'));
+});
+
 gulp.task('sass:watch', function () {
   gulp.watch('./assets/scss/**/*.scss', ['sass']);
 });

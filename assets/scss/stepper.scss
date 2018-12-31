@@ -1,0 +1,22 @@
+@import 'variables.scss';
+
+
+.stepper{
+    
+    .step{
+        border-radius: 50%;
+        border: 1px solid $bnn-color-text;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .subtitulo{
+        font-family: "oswald";
+        color: $bnn-color-text-action;
+    }
+    p{
+        margin: 0;
+    }
+}
