@@ -26,7 +26,8 @@ p{
     color: $bnn-color-text;
 }
 
-body{
+body, html{
+    position: relative !important;
     color: $bnn-color-text;
     background-color: $bnn-color-primary;
     font-family: "roboto-regular";
@@ -57,18 +58,12 @@ body{
 
             overflow: hidden;
             border: 1px solid $bnn-luz;
-            //margin-top: -80px;
             padding-top: 0px;
             width: 100%;
-            //height: calc(100vh + 90px);
-            
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         
         div.page:not(:first-of-type) {
-            padding-top: 56px;
+            padding: 5rem .5rem;
         }
     }
 

@@ -19,25 +19,32 @@
 </head>
 
 <body>
-    <div class="container clearfix">
-        <nav id="navbar-example2" class="navbar sticky-top navbar-light pt-0">
+    <nav id="bnn-navbar" class="navbar navbar-expand-lg sticky-top navbar-light pt-0">
+        <div class="container">
             <a class="navbar-brand">BNN</a>
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#mision">Mision</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#vision">Vision</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div data-target="#navbar-example2" data-offset="0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBNN" aria-controls="navbarBNN" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarBNN">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mision">Mision</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vision">Vision</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container clearfix">
+        <div data-target="#bnn-navbar" data-offset="0">
             <div class="page" id="home">
                 <div id="bnnHomeSlide" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -69,67 +76,71 @@
                 </div>
             </div>
             <div class="page" id="mision">
-                <div class="col-md-12 d-flex justify-content-center align-items-center special-separate">
-                    <div class="col-md-6 col-sm-12">
-                        <article class="vista">
-                            <h3 class="titulo">Lorem ipsum dolor.</h3>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ut possimus ipsam nemo
-                                    pariatur consectetur. Ea pariatur sed molestiae esse tenetur, accusantium, in
-                                    laborum placeat numquam reiciendis adipisci ex quam!</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ut possimus ipsam nemo
-                                    pariatur consectetur. Ea pariatur sed molestiae esse tenetur, accusantium, in
-                                    laborum placeat numquam reiciendis adipisci ex quam!</p>
-                                <a class="btn-bnn" href="">Read more...</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
+                <div class="col-md-12">
                         <div class="row">
-                            <div class="card-deck">
-                                <div class="card">
-                                    <img class="bnn-icon-card" src="assets/images/triangulos.png" alt="icon">
-                                    <div class="card-body">
-                                        <h5 class="bnn-card-title">Card 1</h5>
-                                        <p class="bnn-card-text">This card has supporting text below as a natural
-                                            lead-in to additional content.</p>
-                                        <a class="bnn-read-more-link-card" id="1" href="#">Read...</a>
+                                <div class="col-md-6 col-xs-12">
+                                        <article class="vista p-3">
+                                            <h3 class="titulo">Lorem ipsum dolor.</h3>
+                                            <div class="content">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ut possimus ipsam nemo
+                                                    pariatur consectetur. Ea pariatur sed molestiae esse tenetur, accusantium, in
+                                                    laborum placeat numquam reiciendis adipisci ex quam!</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ut possimus ipsam nemo
+                                                    pariatur consectetur. Ea pariatur sed molestiae esse tenetur, accusantium, in
+                                                    laborum placeat numquam reiciendis adipisci ex quam!</p>
+                                            </div>
+                                            <a class="btn-bnn" href="#">Read more...</a>
+                                        </article>
                                     </div>
-                                </div>
-                                <div class="card">
-                                    <img class="bnn-icon-card" src="assets/images/triangulos.png" alt="icon">
-                                    <div class="card-body">
-                                        <h5 class="bnn-card-title">Card 2</h5>
-                                        <p class="bnn-card-text">This card has supporting text below as a natural
-                                            lead-in to additional content.</p>
-                                        <a class="bnn-read-more-link-card" id="2" href="#">Read...</a>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-6 p-2">
+                                                <div class="card">
+                                                    <img class="bnn-icon-card" src="assets/images/triangulos.png" alt="icon">
+                                                    <div class="card-body">
+                                                        <h5 class="bnn-card-title">Card 1</h5>
+                                                        <p class="bnn-card-text">This card has supporting text below as a natural
+                                                            lead-in to additional content.</p>
+                                                        <a class="bnn-read-more-link-card" id="1" href="#">Read...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6 p-2">
+                                                <div class="card">
+                                                    <img class="bnn-icon-card" src="assets/images/triangulos.png" alt="icon">
+                                                    <div class="card-body">
+                                                        <h5 class="bnn-card-title">Card 2</h5>
+                                                        <p class="bnn-card-text">This card has supporting text below as a natural
+                                                            lead-in to additional content.</p>
+                                                        <a class="bnn-read-more-link-card" id="2" href="#">Read...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6 p-2">
+                                                <div class="card">
+                                                    <img class="bnn-icon-card" src="assets/images/triangulos.png" alt="icon">
+                                                    <div class="card-body">
+                                                        <h5 class="bnn-card-title">Card 3</h5>
+                                                        <p class="bnn-card-text">This card has supporting text below as a natural
+                                                            lead-in to additional content.</p>
+                                                        <a class="bnn-read-more-link-card" id="3" href="#">Read...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6 p-2">
+                                                <div class="card">
+                                                    <img class="bnn-icon-card" src="assets/images/triangulos.png" alt="icon">
+                                                    <div class="card-body">
+                                                        <h5 class="bnn-card-title">Card 4</h5>
+                                                        <p class="bnn-card-text">This card has supporting text below as a natural
+                                                            lead-in to additional content.</p>
+                                                        <a class="bnn-read-more-link-card" id="4" href="#">Read...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="card-deck">
-                                <div class="card">
-                                    <img class="bnn-icon-card" src="assets/images/triangulos.png" alt="icon">
-                                    <div class="card-body">
-                                        <h5 class="bnn-card-title">Card 3</h5>
-                                        <p class="bnn-card-text">This card has supporting text below as a natural
-                                            lead-in to additional content.</p>
-                                        <a class="bnn-read-more-link-card" id="3" href="#">Read...</a>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img class="bnn-icon-card" src="assets/images/triangulos.png" alt="icon">
-                                    <div class="card-body">
-                                        <h5 class="bnn-card-title">Card 4</h5>
-                                        <p class="bnn-card-text">This card has supporting text below as a natural
-                                            lead-in to additional content.</p>
-                                        <a class="bnn-read-more-link-card" id="4" href="#">Read...</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -138,42 +149,44 @@
             </video>
 
             <div class="page" id="vision">
-                <div class="col-md-12 d-flex justify-content-center align-items-center special-separate">
-                    <div class="col-md-6">
-                            <h2 class="titulo">Seccion visional</h2>
-                            <div class="col stepper p-3 d-flex justify-content-between align-items-center">
-                                <div class="step mr-5">1</div>
-                                <div class="col">
-                                    <div class="row subtitulo">Step 1</div>
-                                    <div class="row">
-                                        <p>Lorem ipsum dolor sit amet consecte</p>
-                                    </div>
+                <div class="col-md-12">
+                    <div class="row">
+                    <div class="col-md-6 col-lg-6  justify-content-center align-content-center">
+                        <h2 class="titulo">Seccion visional</h2>
+                        <div class="col stepper p-3 d-flex justify-content-between align-items-center">
+                            <div class="step mr-5">1</div>
+                            <div class="col">
+                                <div class="row subtitulo">Step 1</div>
+                                <div class="row">
+                                    <p>Lorem ipsum dolor sit amet consecte</p>
                                 </div>
                             </div>
-                            <div class="col stepper p-3 d-flex justify-content-between align-items-center">
-                                <div class="step mr-5">2</div>
-                                <div class="col">
-                                    <div class="row subtitulo">Step 2</div>
-                                    <div class="row">
-                                        <p>Lorem ipsum dolor sit amet consecte</p>
-                                    </div>
+                        </div>
+                        <div class="col stepper p-3 d-flex justify-content-between align-items-center">
+                            <div class="step mr-5">2</div>
+                            <div class="col">
+                                <div class="row subtitulo">Step 2</div>
+                                <div class="row">
+                                    <p>Lorem ipsum dolor sit amet consecte</p>
                                 </div>
                             </div>
-                            <div class="col stepper p-3 d-flex justify-content-between align-items-center">
-                                <div class="step mr-5">3</div>
-                                <div class="col">
-                                    <div class="row subtitulo">Step 3</div>
-                                    <div class="row">
-                                        <p>Lorem ipsum dolor sit amet consecte</p>
-                                    </div>
+                        </div>
+                        <div class="col stepper p-3 d-flex justify-content-between align-items-center">
+                            <div class="step mr-5">3</div>
+                            <div class="col">
+                                <div class="row subtitulo">Step 3</div>
+                                <div class="row">
+                                    <p>Lorem ipsum dolor sit amet consecte</p>
                                 </div>
                             </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-lg-6 d-flex justify-content-center align-content-center">
                         <img src="assets/images/VISUAL IMAGEN.png" alt="visional">
                     </div>
                 </div>
             </div>
+        </div>
 
             <div class="page" id="contact">
                 <div class="col-md-12 d-flex align-content-center justify-content-center flex-wrap">
@@ -215,7 +228,6 @@
     </div>
 </body>
 
-<!--script src="assets/mock/cards.js"></script-->
 <script src="assets/js/bundle.min.js"></script>
 
 </html>
