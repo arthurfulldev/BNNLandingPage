@@ -1,233 +1,252 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BNN-LandingPage</title>
-    <script src="libs/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/mine.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-</head>
+        <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" sizes="16x16 32x32">
+        <title>BNN-LandingPage</title>
 
-<body>
-    <nav id="bnn-navbar" class="navbar navbar-expand-lg sticky-top navbar-light pt-0">
-        <div class="container">
-            <a class="navbar-brand">BNN</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBNN" aria-controls="navbarBNN" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarBNN">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#mision">Mision</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#vision">Vision</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container clearfix">
-        <div data-target="#bnn-navbar" data-offset="0">
-            <div class="page" id="home">
-                <div id="bnnHomeSlide" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#bnnHomeSlide" data-slide-to="0" class="active"></li>
-                        <li data-target="#bnnHomeSlide" data-slide-to="1"></li>
-                        <li data-target="#bnnHomeSlide" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://www.bnn.mx/img/main/clientes_int/merchant4.png" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://www.bnn.mx/img/main/clientes_int/necafe_hero.jpg"
-                                alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://www.bnn.mx/img/main/clientes_int/necafe_merchant4.jpg"
-                                alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#bnnHomeSlide" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#bnnHomeSlide" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/mine.min.css">
+    
+    </head>
+    <body>
+        <nav id="bnn-navbar" class="navbar navbar-expand-lg sticky-top navbar-light pt-0">
+                <a class="navbar-brand"><img width="200px" src="assets/images/icons/logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBNN" aria-controls="navbarBNN" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarBNN">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mision">Mision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vision">Vision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="page" id="mision">
-                <div class="col-md-12">
-                        <div class="row">
-                                <div class="col-md-6 col-xs-12">
-                                        <article class="vista p-3">
-                                            <h3 class="titulo">Lorem ipsum dolor.</h3>
-                                            <div class="content">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ut possimus ipsam nemo
-                                                    pariatur consectetur. Ea pariatur sed molestiae esse tenetur, accusantium, in
-                                                    laborum placeat numquam reiciendis adipisci ex quam!</p>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ut possimus ipsam nemo
-                                                    pariatur consectetur. Ea pariatur sed molestiae esse tenetur, accusantium, in
-                                                    laborum placeat numquam reiciendis adipisci ex quam!</p>
-                                            </div>
-                                            <a class="btn-bnn" href="#">Read more...</a>
-                                        </article>
-                                    </div>
-                                    <div class="col-md-6 col-xs-12">
-                                        <div class="row">
-                                            <div class="col-md-12 col-lg-6 p-2">
-                                                <div class="card">
-                                                    <img class="bnn-icon-card" src="assets/images/triangulos.png" alt="icon">
-                                                    <div class="card-body">
-                                                        <h5 class="bnn-card-title">Card 1</h5>
-                                                        <p class="bnn-card-text">This card has supporting text below as a natural
-                                                            lead-in to additional content.</p>
-                                                        <a class="bnn-read-more-link-card" id="1" href="#">Read...</a>
+        </nav>
+        <div class="clearfix content">
+            <div data-target="#bnn-navbar" data-offset="0">
+                <div class="page" id="home">
+                    <div id="bnnHomeSlide" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#bnnHomeSlide" data-slide-to="0" class="active"></li>
+                            <li data-target="#bnnHomeSlide" data-slide-to="1"></li>
+                            <li data-target="#bnnHomeSlide" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="assets/images/c1.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="assets/images/c2.jpg"
+                                    alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="assets/images/c3.gif"
+                                    alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#bnnHomeSlide" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#bnnHomeSlide" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="page" id="mision">
+                    <div class="col-md-12 mt-5 mb-5">
+                            <div class="row">
+                                    <div class="col-md-6 col-xs-12 d-flex align-items-center"">
+                                            <article class="vista p-3">
+                                                <h3 class="titulo">Lorem ipsum dolor.</h3>
+                                                <div class="content">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ut possimus ipsam nemo
+                                                        pariatur consectetur. Ea pariatur sed molestiae esse tenetur, accusantium, in
+                                                        laborum placeat numquam reiciendis adipisci ex quam!</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ut possimus ipsam nemo
+                                                        pariatur consectetur. Ea pariatur sed molestiae esse tenetur, accusantium, in
+                                                        laborum placeat numquam reiciendis adipisci ex quam!</p>
+                                                </div>
+                                                <a class="btn-bnn" href="#">Read more...</a>
+                                            </article>
+                                        </div>
+                                        <div class="col-md-6 col-xs-12">
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-6 p-2 pt-5">
+                                                    <div class="card">
+                                                        <img class="bnn-icon-card" src="assets/images/icons/triangulos.svg" alt="icon">
+                                                        <div class="card-body">
+                                                            <h5 class="bnn-card-title">Card 1</h5>
+                                                            <p class="bnn-card-text">This card has supporting text below as a natural
+                                                                lead-in to additional content.</p>
+                                                            <a class="bnn-read-more-link-card" id="1" href="#">Read...</a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-12 col-lg-6 p-2">
-                                                <div class="card">
-                                                    <img class="bnn-icon-card" src="assets/images/triangulos.png" alt="icon">
-                                                    <div class="card-body">
-                                                        <h5 class="bnn-card-title">Card 2</h5>
-                                                        <p class="bnn-card-text">This card has supporting text below as a natural
-                                                            lead-in to additional content.</p>
-                                                        <a class="bnn-read-more-link-card" id="2" href="#">Read...</a>
+                                                <div class="col-md-12 col-lg-6 p-2 pt-5">
+                                                    <div class="card">
+                                                        <img class="bnn-icon-card" src="assets/images/icons/cubos.svg" alt="icon">
+                                                        <div class="card-body">
+                                                            <h5 class="bnn-card-title">Card 2</h5>
+                                                            <p class="bnn-card-text">This card has supporting text below as a natural
+                                                                lead-in to additional content.</p>
+                                                            <a class="bnn-read-more-link-card" id="2" href="#">Read...</a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-12 col-lg-6 p-2">
-                                                <div class="card">
-                                                    <img class="bnn-icon-card" src="assets/images/triangulos.png" alt="icon">
-                                                    <div class="card-body">
-                                                        <h5 class="bnn-card-title">Card 3</h5>
-                                                        <p class="bnn-card-text">This card has supporting text below as a natural
-                                                            lead-in to additional content.</p>
-                                                        <a class="bnn-read-more-link-card" id="3" href="#">Read...</a>
+                                                <div class="col-md-12 col-lg-6 p-2 pt-5">
+                                                    <div class="card">
+                                                        <img class="bnn-icon-card" src="assets/images/icons/cubo.svg" alt="icon">
+                                                        <div class="card-body">
+                                                            <h5 class="bnn-card-title">Card 3</h5>
+                                                            <p class="bnn-card-text">This card has supporting text below as a natural
+                                                                lead-in to additional content.</p>
+                                                            <a class="bnn-read-more-link-card" id="3" href="#">Read...</a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-12 col-lg-6 p-2">
-                                                <div class="card">
-                                                    <img class="bnn-icon-card" src="assets/images/triangulos.png" alt="icon">
-                                                    <div class="card-body">
-                                                        <h5 class="bnn-card-title">Card 4</h5>
-                                                        <p class="bnn-card-text">This card has supporting text below as a natural
-                                                            lead-in to additional content.</p>
-                                                        <a class="bnn-read-more-link-card" id="4" href="#">Read...</a>
+                                                <div class="col-md-12 col-lg-6 p-2 pt-5">
+                                                    <div class="card">
+                                                        <img class="bnn-icon-card" src="assets/images/icons/recicler.svg" alt="icon">
+                                                        <div class="card-body">
+                                                            <h5 class="bnn-card-title">Card 4</h5>
+                                                            <p class="bnn-card-text">This card has supporting text below as a natural
+                                                                lead-in to additional content.</p>
+                                                            <a class="bnn-read-more-link-card" id="4" href="#">Read...</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                        </div>
+                            </div>
+                    </div>
                 </div>
-            </div>
-
-            <video id="video" controls controlslist="nodownload">
-                <source src="https://www.bnn.mx/video/reel.mp4" type="video/mp4">
-            </video>
-
-            <div class="page" id="vision">
-                <div class="col-md-12">
+                <div class="col-12">
                     <div class="row">
-                    <div class="col-md-6 col-lg-6  justify-content-center align-content-center">
-                        <h2 class="titulo">Seccion visional</h2>
-                        <div class="col stepper p-3 d-flex justify-content-between align-items-center">
-                            <div class="step mr-5">1</div>
-                            <div class="col">
-                                <div class="row subtitulo">Step 1</div>
-                                <div class="row">
-                                    <p>Lorem ipsum dolor sit amet consecte</p>
-                                </div>
+                        <div class="col-md-3 d-flex align-items-center justify-content-center flex-wrap">
+                            <div>
+                                <p>Watch Video</p>
+                                <a href="#bnn-modal" role="button" class="btn bnn-btn-video" data-toggle="modal"><i class="fas fa-play"></i></a>
                             </div>
+                            
                         </div>
-                        <div class="col stepper p-3 d-flex justify-content-between align-items-center">
-                            <div class="step mr-5">2</div>
-                            <div class="col">
-                                <div class="row subtitulo">Step 2</div>
-                                <div class="row">
-                                    <p>Lorem ipsum dolor sit amet consecte</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col stepper p-3 d-flex justify-content-between align-items-center">
-                            <div class="step mr-5">3</div>
-                            <div class="col">
-                                <div class="row subtitulo">Step 3</div>
-                                <div class="row">
-                                    <p>Lorem ipsum dolor sit amet consecte</p>
-                                </div>
-                            </div>
+                        <div class="col-md-9">
+                            <img width="100%"src="assets/images/poster.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 d-flex justify-content-center align-content-center">
-                        <img src="assets/images/VISUAL IMAGEN.png" alt="visional">
+                </div>
+                <div class="page" id="vision">
+                    <div class="col-md-12">
+                        <div class="row">
+                        <div class="col-md-6 col-lg-6  justify-content-center align-content-center">
+                            <h2 class="titulo">Seccion visional</h2>
+                            <div class="col stepper p-3 d-flex justify-content-between align-items-center">
+                                <div class="step mr-5">1</div>
+                                <div class="col">
+                                    <div class="row subtitulo">Step 1</div>
+                                    <div class="row">
+                                        <p>Lorem ipsum dolor sit amet consecte</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col stepper p-3 d-flex justify-content-between align-items-center">
+                                <div class="step mr-5">2</div>
+                                <div class="col">
+                                    <div class="row subtitulo">Step 2</div>
+                                    <div class="row">
+                                        <p>Lorem ipsum dolor sit amet consecte</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col stepper p-3 d-flex justify-content-between align-items-center">
+                                <div class="step mr-5">3</div>
+                                <div class="col">
+                                    <div class="row subtitulo">Step 3</div>
+                                    <div class="row">
+                                        <p>Lorem ipsum dolor sit amet consecte</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 d-flex justify-content-center align-content-center">
+                            <img src="assets/images/VISUAL IMAGEN.png" alt="visional">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-            <div class="page" id="contact">
-                <div class="col-md-12 d-flex align-content-center justify-content-center flex-wrap">
+                <div class="page" id="contact">
+                    <div class="col-md-12 d-flex align-content-center justify-content-center flex-wrap">
 
-                    <form class="form-contact contact-content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet veritatis quibusdam hic
-                            repellendus
-                            harum nisi, voluptates vel odio! Eveniet reiciendis maxime repudiandae nihil eaque ab autem
-                            eligendi, ratione iste dolores.
-                        </p>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" id="inputname" placeholder="Escribe tu nombre."
-                                    required>
+                        <form class="form-contact contact-content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet veritatis quibusdam hic
+                                repellendus
+                                harum nisi, voluptates vel odio! Eveniet reiciendis maxime repudiandae nihil eaque ab autem
+                                eligendi, ratione iste dolores.
+                            </p>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="inputname" placeholder="Escribe tu nombre."
+                                        required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" id="email" placeholder="Escribe tu email."
+                                        required>
+                                </div>
                             </div>
-                            <div class="form-group col-md-6">
-                                <input type="email" class="form-control" id="email" placeholder="Escribe tu email."
-                                    required>
+                            <div class="formr-row">
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="tel" placeholder="Escribe tu telefono."
+                                        required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="formr-row">
+
                             <div class="form-group">
-                                <input type="tel" class="form-control" id="tel" placeholder="Escribe tu telefono."
-                                    required>
+                                <textarea class="form-control" rows="3" id="msg" name="msg" required minlength="50"
+                                    maxlength="250"></textarea>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <textarea class="form-control" rows="3" id="msg" name="msg" required minlength="50"
-                                maxlength="250"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn-bnn float-right">Enviar</button>
-                    </form>
+                            <button type="submit" class="btn-bnn float-right">Enviar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
 
-<script src="assets/js/bundle.min.js"></script>
+        <div class="modal" id="bnn-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-full" role="document">
+                <div class="modal-content">
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <video id="bnn-video" width="100%">
+                        <source src="https://www.bnn.mx/video/reel.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/bundle.min.js"></script>
 
 </html>
